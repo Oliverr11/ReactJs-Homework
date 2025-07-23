@@ -11,6 +11,7 @@ import Login from "./components/pages/Login.jsx";
 import Home from "./components/pages/home.jsx";
 import ProductDetail from "./components/pages/product/ProductDetail.jsx";
 import ProductFilter from "./components/pages/product/ProductFilter.jsx";
+import { LoginHookForm } from "./components/pages/LoginHookForm.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -25,7 +26,8 @@ createRoot(document.getElementById("root")).render(
           <Route path="/products-filter" element={<ProductFilter />} />
           <Route path="/about-us" element={<About />} />
         </Route>
-        <Route path="/login" element={<Login />} />
+        {/* <Route path="/login" element={<Login />} /> */}
+        <Route path="/login" element={<LoginHookForm />} />
       </Routes>
     </BrowserRouter>{" "}
   </StrictMode>
